@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us </title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="index.html#explore">Explore</a></li>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                    <li> <ion-icon id="icon" class="darkToggle" name="moon" onclick="changeIcon()"></ion-icon>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="welcome">
+            <div class="contactUs">
+                <div class="contact">
+                    <h2> Contact Us </h2>
+                    <p> We are committed to providing outstanding customer service, so don't hesitate to contact us
+                        whenever you need
+                        assistance.</p>
+                    <a href="https://wa.me/6285772575082"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="https://instagram.com/chintyaage_"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="mailto:chintya.gustiani.putri.tik22@mhsw.pnj.ac.id"><ion-icon
+                            name="mail-outline"></ion-icon></a>
+                    <a
+                        href="https://www.google.com/maps/place/Jakarta+State+Polytechnic/@-6.3708882,106.8225548,17z/data=!4m6!3m5!1s0x2e69ec1cabb59bdf:0x28b4f84e4677f329!8m2!3d-6.3707762!4d106.8236706!16s%2Fg%2F1ptw697mq?entry=ttu"><ion-icon
+                            name="location-outline"></ion-icon></a>
+                </div>
+
+                <div class="boxMessage">
+                    <form action="">
+                        <label for="fname">Name : </label><br>
+                        <input type="text" id="fname" placeholder="Type your name"><br><br>
+                    </form>
+                    <form action="">
+                        <label for="email">Email : </label><br>
+                        <input type="text" id="email" placeholder="Type your email"><br><br>
+                    </form>
+                    <form action="">
+                        <label for="message">Message : </label><br>
+                        <textarea name="message" rows="5" cols="20" placeholder="Type your message"></textarea>
+                    </form>
+                    <div class="send">
+                        <button class="submitBtn" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/scriptContact.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

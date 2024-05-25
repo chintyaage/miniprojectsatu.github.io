@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --gelapSatu : #176B87;
+    --gelapDua : #86B6F6;
+    --gelapTiga : #B4D4FF;
+    --terang : #EEF5FF;
+    --darkMode : #333333;
+}
+
+body{
+    background-color: white;
+    font-family: "Outfit", sans-serif;
+}
+
+header{
+    padding-top: 50px;
+    height: 700px;
+    background-image: url(../img/landingPage.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--terang);
+    box-shadow: inset 0px -67px 43px -8px rgba(255,255,255,1);
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 5px;
+}
+
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--terang);
+    box-shadow: -2px 10px 16px -6px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--gelapSatu);
+    font-size: larger;
+    font-weight:bold;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    padding: 10px;
+}
+
+nav li a:hover{
+    color: var(--gelapDua);
+    transition: 0.3s;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px -9px 18px 4px rgba(0,0,0,0.75);
+    margin: auto;
+    margin-top: 10px;
+    padding: 150px;
+    padding-top: 0;
+    border-radius: 20px;
+}
+
+.welcome h1{
+    margin-top: 150px;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Mochiy Pop P One", sans-serif;
+    text-shadow: -4px 8px 6px rgba(0,0,0,0.9);    
+}
+
+.welcome p{
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+main{
+    margin:60px;
+    margin-top: 0px;
+    padding: 30px;
+}
+
+.title{
+    margin-top: 70px;
+}
+
+.title p{
+    color: grey;
+    padding-bottom: 20px;
+}
+
+.card-recomendation , .news{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 20%;
+    height: auto;
+    background-color: var(--terang);
+    padding: 20px;
+    text-align: center;
+    margin-left: 35px;
+    box-shadow: -7px 7px 8px -8px rgba(0,0,0,1);
+    transition: 0.7s;
+}
+
+.card2{
+    width: 40%;
+    height: auto;
+    background-color: var(--terang);
+    padding: 15px;
+    text-align: center;
+    margin-left: 35px;
+    box-shadow: -7px 7px 8px -8px rgba(0,0,0,1);
+    transition: 0.7s;
+}
+
+.card h3, .card p {
+    text-align: left;
+}
+
+.card p , .card2 p{
+    color: grey;
+}
+
+.card:hover{
+    cursor: pointer;
+    width: 16% ;
+    height: auto;
+    box-shadow: -8px 10px 17px -8px rgba(0,0,0,1);
+    transition: 0.7s;
+}
+
+.card2:hover{
+    width: 45% ;
+    height: auto;
+    box-shadow: -8px 10px 17px -8px rgba(0,0,0,1);
+    transition: 0.7s;
+}
+
+.box img {
+    outline: transparent solid 2px;
+    outline-offset: 0px;
+}
+
+.top-place a:hover .box img {
+    outline: #fff solid 2px;
+    outline-offset: -80px;
+    opacity: 0.8;
+}
+
+.effect {
+    transition: all 0.7s ease;
+}
+
+.top-place{
+    margin: 5%;
+    margin-top: 50px;
+}
+
+footer{
+    background-color: var(--gelapDua);
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--gelapSatu);
+    box-shadow: inset 0px 68px 43px -8px rgba(255,255,255,1);
+}
+
+.information , .instruction{
+    width: 40%;
+    margin-left: 50px;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.contactBtn{
+    width: 180px;
+    height: 50px;
+    background-color: var(--gelapSatu);
+    color: var(--terang);
+    font-size: 20px;
+    border: none;
+    transition: 0.7s;
+}
+
+.contactBtn:hover{
+    background-color: var(--gelapTiga);
+    color: var(--gelapSatu);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/* CONTACT */
+
+.contactUs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 170px;
+    width: 100%;
+}
+
+.contact{
+    font-size: 25px;
+    width: 50%;
+}
+
+.contact h2{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    text-shadow: -2px 7px 6px rgba(0,0,0,0.9); 
+}
+
+.contact p{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.contact a{
+    padding: 15px;   
+    color: var(--terang);
+    font-size: 40px;
+}
+
+.boxMessage{
+    width: 50%;
+    margin-left: 60px;
+    padding: 30px;
+    background-color: var(--gelapTiga);
+    color: var(--gelapSatu);
+    box-shadow: -5px 9px 10px 0px rgba(0,0,0,0.49);
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: left;
+}
+
+label{
+    width: 25%;
+    margin: 10px;
+}
+
+input , textarea{
+    width: 75%;
+    background-color: var(--terang);
+    border-radius: 3px;
+    border: none;
+}
+
+.boxMessage .send{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.submitBtn{
+    width: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--gelapSatu);
+    color: var(--terang);
+    transition: 0.7s;
+}
+
+.submitBtn:hover{
+    background-color: var(--gelapDua);
+    color: var(--gelapSatu);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+/* RESPONSIF */
+
+@media screen and (max-width: 1000px){
+    main{
+        flex-flow: column;
+    }
+
+    body{
+        width:auto;
+    }
+
+    nav ul{
+        gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-recomendation , .news{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .card{
+        width: 70%;
+        height: auto;
+        margin: 30px;
+    }
+
+    .card:hover{
+        width: 55%;
+    }
+
+    .welcome{
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .card2{
+        width: 70%;
+        margin: 30px;
+    }
+
+    .card2:hover{
+        width: 80%;
+        transition: 0.7s;
+    }
+
+    .contactUs{
+        width: 80%;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .contact, .boxMessage{
+        width: 90%;
+        margin: 0%;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    main{
+        align-self: stretch;
+    }
+
+    body{
+        width:auto;
+    }
+
+    nav ul{
+        gap: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-recomendation , .news{
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .card{
+        width: 70%;
+        height: auto;
+        margin: 30px;
+    }
+
+    .card:hover{
+        width: 55%;
+    }
+
+    .welcome{
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .card2{
+        width: 60%;
+        margin: 30px;
+    }
+
+    .card2:hover{
+        width: 80%;
+        transition: 0.7s;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        width: 100%;
+    }
+
+    nav ul{
+        gap: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .welcome{
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .card-recomendation , .news{
+        flex-direction: column;
+        margin-bottom: 100px;
+        align-self: center;
+    }
+
+    .card{
+        width: 70%;
+        height: auto;
+        margin: 20px;
+    }
+
+    .card:hover{
+        width: 55%;
+    }
+
+    .card2{
+        width: 90%;
+    }
+
+    .card2:hover{
+        width: 80%;
+        transition: 0.7s;
+    }
+}
+
+/* DARK MODE */
+
+.darkToggle{
+    font-size: 24px;
+    color: var(--gelapSatu);
+}
+
+.darkToggle:hover{
+    cursor: pointer;
+    color: var(--gelapDua);
+    transition: 0.7s;
+}
+
+.darkHeader{
+    box-shadow: inset 0px -67px 43px -8px rgba(51, 51, 51, 1);
+}
+
+.darkNav{
+    background-color: var(--gelapSatu);
+}
+
+.darkNav a , .darkNav ion-icon, .darkCard p{
+    color: var(--terang);
+}
+
+.darkBody{
+    background-color: var(--darkMode);
+    color: var(--terang);
+}
+
+.darkFooter{
+    color: var(--terang);
+    background-color: var(--gelapSatu);
+    box-shadow: inset 0px 68px 43px -8px rgba(51, 51, 51, 1);
+}
+
+.darkCard, .darkMessage{
+    background-color: var(--gelapSatu);
+    color: var(--terang);
+}
+
+.darkButton{
+    background-color: var(--darkMode);
+    color: var(--gelapDua);
+}
